@@ -1,61 +1,1493 @@
 {
-	"1S": { "text": "12+ HCP, 5+ Spades",
-		"2C": { "text": "12+ HCP, 3+ Clubs",
-			"2D": {"text": "4+ Diamonds",
-				"2H": {"text": "5-4 Clubs-Heart",
-					"2S": {"text": "6+ Spades",
-						"2NT": {"text": "No further info",
-							"3C": {"text": "Club stop (eg A, Kx, Qxx [avoid Qxx])",
-								"3D": {"text": "Diamond stop",
-									"3H": {"text": "Ask: Heart stop",
-										"3S": {"text": "Has Heart stop, Ask: Spade stop",
-											"3NT": {"text": "To play"}
-											},
-										"3NT": {"text": "Has Heart stop, to play"}
-										},
-									"3S": {"text": "Ask: Spade stop (probably has hearts)",
-										"3NT": {"text": "To play (Has spade stop)"}
-										},
-									"3NT": {"text": "To play (Has heart and spade stop)"}
+	"1H":{
+		"text":"12+ HCP, 5+ Hearts",
+		"1S":{
+			"text":"6+ HCP, 4+ Spades"
+		},
+		"1NT":{
+			"text":"6-11 HCP, < 3 Hearts"
+		},
+		"2C":{
+			"text":"12+ HCP, 4+ Clubs, 2/1 Game-Force",
+			"2D":{
+				"text":"4+ Diamonds",
+				"2NT":{
+					"text":"Nothing to show. Implies 3-2-3-5",
+					"3C":{
+						"text":"3+ Clubs",
+						"3D":{
+							"text":"Ask: Diamond stop (A, Kx, Qxx)",
+							"3H":{
+								"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+								"3S":{
+									"text":"Have Heart stop, Ask: Spade stop",
+									"3NT":{
+										"text":"Have Spade stop, To play"
 									},
-								"3H": {"text": "Ask: Heart stop",
-									"3S": {"text": "Has Heart stop, Ask: Spade stop",
-											"3NT": {"text": "To play"}
+									"4C":{
+										"text":"Escape (No Spade stop)",
+										"5C":{
+											"text":"14+ HCP, To play"
+										}
+									},
+									"5C":{
+										"text":"14+ HCP, Escape (No Spade stop), To play"
+									}
+								},
+								"3NT":{
+									"text":"Have Heart, Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Heart stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Heart stop), To play"
+								}
+							},
+							"3S":{
+								"text":"Have Diamond and Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Diamond, Heart, Spade stops, To play"
+							},
+							"4C":{
+								"text":"Escape (No Diamond stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Diamond stop), To play"
+							}
+						},
+						"3H":{
+							"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+							"3S":{
+								"text":"Have Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart, Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Heart stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have all stops (Diamond, Hearts, Spades), To play"
+						}
+					},
+					"3D":{
+						"text":"5+ Diamonds",
+						"3H":{
+							"text":"3+ Diamonds, Ask: Heart stop",
+							"3S":{
+								"text":"Ask: Spade stop (Have Heart stop)",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4D":{
+									"text":"Escape",
+									"5D":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5D":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart and Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape (No Heart stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"3+ Diamonds, Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"2- Diamonds OR Have Heart and Spade stop"
+						}
+					},
+					"3NT":{
+						"text":"To play"
+					}
+				},
+				"3C":{
+					"text":"6+ Clubs",
+					"3D":{
+						"text":"2+ Club, Ask: Diamond stop (A, Kx, Qxx)",
+						"3H":{
+							"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+							"3S":{
+								"text":"Have Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart, Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Heart stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Have Diamond and Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Diamond, Heart, Spade stops, To play"
+						},
+						"4C":{
+							"text":"Escape (No Diamond stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Diamond stop), To play"
+						}
+					},
+					"3H":{
+						"text":"2+ Club, Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+						"3S":{
+							"text":"Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart, Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Heart stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Heart stop), To play"
+						}
+					},
+					"3S":{
+						"text":"2+ Club, Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"1- Club, Have all stops (Diamond, Hearts, Spades), To play"
+					}
+				},
+				"3D":{
+					"text":"4+ Diamonds",
+					"3H":{
+						"text":"Ask: Heart stop",
+						"3S":{
+							"text":"Ask: Spade stop (Have Heart stop)",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart and Spade stop, To play"
+						},
+						"4D":{
+							"text":"Escape (No Heart stop)",
+							"5D":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5D":{
+							"text":"14+ HCP, Escape (No Heart stop), To play"
+						}
+					},
+					"3S":{
+						"text":"Have Heart stop, Ask: Spade stop",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4D":{
+							"text":"Escape",
+							"5D":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5D":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"Have Heart and Spade stop"
+					}
+				},
+				"3NT":{
+					"text":"3- Diamonds, To play"
+				}
+			},
+			"2H":{
+				"text":"6+ Hearts",
+				"2NT":{
+					"text":"1- Heart, Nothing to show. Obviously 3-1-4-5",
+					"3C":{
+						"text":"3+ Club",
+						"3D":{
+							"text":"Ask: Diamond stop (A, Kx, Qxx)",
+							"3H":{
+								"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+								"3S":{
+									"text":"Have Heart stop, Ask: Spade stop",
+									"3NT":{
+										"text":"Have Spade stop, To play"
+									},
+									"4C":{
+										"text":"Escape (No Spade stop)",
+										"5C":{
+											"text":"14+ HCP, To play"
+										}
+									},
+									"5C":{
+										"text":"14+ HCP, Escape (No Spade stop), To play"
+									}
+								},
+								"3NT":{
+									"text":"Have Heart, Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Heart stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Heart stop), To play"
+								}
+							},
+							"3S":{
+								"text":"Have Diamond and Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Diamond, Heart, Spade stops, To play"
+							},
+							"4C":{
+								"text":"Escape (No Diamond stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Diamond stop), To play"
+							}
+						},
+						"3H":{
+							"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+							"3S":{
+								"text":"Have Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart, Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Heart stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have all stops (Diamond, Hearts, Spades), To play"
+						}
+					},
+					"3D":{
+						"text":"4+ Diamond",
+						"3H":{
+							"text":"4+ Diamonds, Ask: Heart stop",
+							"3S":{
+								"text":"Ask: Spade stop (Have Heart stop)",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4D":{
+									"text":"Escape",
+									"5D":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5D":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart and Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape (No Heart stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"4+ Diamonds, Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"3- Diamonds OR Have Heart and Spade stop"
+						}
+					},
+					"3H":{
+						"text":"7+ Hearts",
+						"3NT":{
+							"text":"0 Hearts"
+						},
+						"4H":{
+							"text":"1 Heart"
+						}
+					},
+					"3NT":{
+						"text":"To play"
+					}
+				},
+				"3C":{
+					"text":"6+ Clubs",
+					"3D":{
+						"text":"2+ Club, Ask: Diamond stop (A, Kx, Qxx)",
+						"3H":{
+							"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+							"3S":{
+								"text":"Have Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart, Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Heart stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Have Diamond and Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Diamond, Heart, Spade stops, To play"
+						},
+						"4C":{
+							"text":"Escape (No Diamond stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Diamond stop), To play"
+						}
+					},
+					"3H":{
+						"text":"2+ Club, Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+						"3S":{
+							"text":"Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart, Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Heart stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Heart stop), To play"
+						}
+					},
+					"3S":{
+						"text":"2+ Club, Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"1- Club, Have all stops (Diamond, Hearts, Spades), To play"
+					}
+				},
+				"3D":{
+					"text":"5+ Diamonds",
+					"3H":{
+						"text":"7+ Hearts",
+						"3NT":{
+							"text":"0 Hearts"
+						},
+						"4H":{
+							"text":"1 Heart"
+						}
+					},
+					"3S":{
+						"text":"3+ Diamond, Ask: Spade stop",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4D":{
+							"text":"Escape",
+							"5D":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5D":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"2- Diamond, To play"
+					}
+				},
+				"4H":{
+					"text":"2 Hearts, To play"
+				}
+			},
+			"2NT":{
+				"text":"Nothing to Show",
+				"3C":{
+					"text":"5+ Clubs",
+					"3D":{
+						"text":"3+ Club, Ask: Diamond stop (A, Kx, Qxx)",
+						"3H":{
+							"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+							"3S":{
+								"text":"Have Heart stop, Ask: Spade stop",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4C":{
+									"text":"Escape (No Spade stop)",
+									"5C":{
+										"text":"14+ HCP, To play"
+									}
+								},
+								"5C":{
+									"text":"14+ HCP, Escape (No Spade stop), To play"
+								}
+							},
+							"3NT":{
+								"text":"Have Heart, Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Heart stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Have Diamond and Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Diamond, Heart, Spade stops, To play"
+						},
+						"4C":{
+							"text":"Escape (No Diamond stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Diamond stop), To play"
+						}
+					},
+					"3H":{
+						"text":"3+ Club, Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+						"3S":{
+							"text":"Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart, Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Heart stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Heart stop), To play"
+						}
+					},
+					"3S":{
+						"text":"3+ Club, Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"2- Club, Have all stops (Diamond, Hearts, Spades), To play"
+					}
+				},
+				"3NT":{
+					"text":"Nothing to show, to play"
+				}
+			},
+			"3C":{
+				"text":"4+ Clubs",
+				"3D":{
+					"text":"Ask: Diamond stop (A, Kx, Qxx)",
+					"3H":{
+						"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+						"3S":{
+							"text":"Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"Have Spade stop, To play"
+							},
+							"4C":{
+								"text":"Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart, Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Heart stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Heart stop), To play"
+						}
+					},
+					"3S":{
+						"text":"Have Diamond and Heart stop, Ask: Spade stop",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"Have Diamond, Heart, Spade stops, To play"
+					},
+					"4C":{
+						"text":"Escape (No Diamond stop)",
+						"5C":{
+							"text":"14+ HCP, To play"
+						}
+					},
+					"5C":{
+						"text":"14+ HCP, Escape (No Diamond stop), To play"
+					}
+				},
+				"3H":{
+					"text":"Have Diamond stop, Ask: Heart stop (A, Kx, Qxx)",
+					"3S":{
+						"text":"Have Heart stop, Ask: Spade stop",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"Have Heart, Spade stop, To play"
+					},
+					"4C":{
+						"text":"Escape (No Heart stop)",
+						"5C":{
+							"text":"14+ HCP, To play"
+						}
+					},
+					"5C":{
+						"text":"14+ HCP, Escape (No Heart stop), To play"
+					}
+				},
+				"3S":{
+					"text":"Have Diamond and Heart stop, Ask: Spade stop (A, Kx, Qxx)",
+					"3NT":{
+						"text":"Have Spade stop, To play"
+					},
+					"4C":{
+						"text":"Escape (No Spade stop)",
+						"5C":{
+							"text":"14+ HCP, To play"
+						}
+					},
+					"5C":{
+						"text":"14+ HCP, Escape (No Spade stop), To play"
+					}
+				},
+				"3NT":{
+					"text":"Have all stops (Diamond, Hearts, Spades), To play"
+				}
+			},
+			"3H":{
+				"text":"7+ Hearts",
+				"3NT":{
+					"text":"0 Hearts, To play"
+				},
+				"4H":{
+					"text":"1 Heart, To play"
+				}
+			}
+		},
+		"2D":{
+			"text":"12+ HCP, 4+ Diamonds, 2/1 Game-Force",
+			"2H":{
+				"text":"6+ Hearts",
+				"2NT":{
+					"text":"Nothing to show",
+					"3H":{
+						"text":"7+ Hearts",
+						"3NT":{
+							"text":"0 Hearts"
+						},
+						"4H":{
+							"text":"1 Hearts"
+						}
+					},
+					"3NT":{
+						"text":"To play"
+					},
+					"4H":{
+						"text":"8+ Hearts"
+					}
+				},
+				"3C":{
+					"text":"5-4 Diamond-Club",
+					"3D":{
+						"text":"3+ Diamond",
+						"3H":{
+							"text":"Ask: Heart stop",
+							"3S":{
+								"text":"Ask: Spade stop (Have Heart stop)",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4D":{
+									"text":"Escape",
+									"5D":{
+										"text":"14+ HCP, To play"
+									}
+								}
+							},
+							"3NT":{
+								"text":"Have Heart and Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape (No Heart stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Ask: Spade stop (Have Heart stop)",
+							"3NT":{
+								"text":"To play (Have Spade stop)"
+							},
+							"4D":{
+								"text":"Escape (No Spade stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart and Spade stop, To play"
+						}
+					},
+					"3H":{
+						"text":"7+ Hearts",
+						"3S":{
+							"text":"0 Hearts, Ask: Spade stop",
+							"3NT":{
+								"text":"To play (Have Spade stop)"
+							},
+							"4C":{
+								"text":"4+ Clubs, Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"4D":{
+								"text":"3+ Diamonds, Escape (No Spade stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, 4+ Clubs, Escape (No Spade stop), To play"
+							},
+							"5D":{
+								"text":"14+ HCP, 3+ Diamonds, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"0 Hearts, Have Spade stop, To play"
+						},
+						"4H":{
+							"text":"1+ Heart"
+						}
+					},
+					"3S":{
+						"text":"4+ Clubs, Ask: Spade stop (Have Heart stop)",
+						"3NT":{
+							"text":"To play (Have Spade stop)"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"2- Diamonds and 3- Clubs OR Have Heart and Spade stop, To play"
+					}
+				},
+				"3D":{
+					"text":"5+ Diamonds",
+					"3H":{
+						"text":"7+ Hearts",
+						"3S":{
+							"text":"3+ Diamonds, 0 Hearts, Ask: Spade stop",
+							"3NT":{
+								"text":"To play (Have Spade stop)"
+							},
+							"4D":{
+								"text":"Escape (No Spade stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"2- Diamonds OR 0 Hearts, Have Spade stop, To play"
+						},
+						"4H":{
+							"text":"1+ Heart"
+						}
+					},
+					"3S":{
+						"text":"3+ Diamonds, Ask: Spade stop (Have Heart stop)",
+						"3NT":{
+							"text":"To play (Have Spade stop)"
+						},
+						"4D":{
+							"text":"Escape (No Spade stop)",
+							"5D":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5D":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"2- Diamonds OR Have Heart and Spade stop, To play"
+					}
+				},
+				"3NT":{
+					"text":"1- Hearts, 3- Diamonds, To play"
+				},
+				"4H":{
+					"text":"2 Hearts, To play"
+				}
+			},
+			"2NT":{
+				"text":"Nothing to show",
+				"3C":{
+					"text":"5-4 Diamonds-Clubs",
+					"3D":{
+						"text":"3+ Diamond",
+						"3H":{
+							"text":"Ask: Heart stop",
+							"3S":{
+								"text":"Ask: Spade stop (Have Heart stop)",
+								"3NT":{
+									"text":"Have Spade stop, To play"
+								},
+								"4D":{
+									"text":"Escape",
+									"5D":{
+										"text":"14+ HCP, To play"
+									}
+								}
+							},
+							"3NT":{
+								"text":"Have Heart and Spade stop, To play"
+							},
+							"4D":{
+								"text":"Escape (No Heart stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Heart stop), To play"
+							}
+						},
+						"3S":{
+							"text":"Ask: Spade stop (Have Heart stop)",
+							"3NT":{
+								"text":"To play (Have Spade stop)"
+							},
+							"4D":{
+								"text":"Escape (No Spade stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5D":{
+								"text":"14+ HCP, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart and Spade stop, To play"
+						}
+					},
+					"3H":{
+						"text":"4+ Clubs or 3+ Diamonds, Ask: Heart stop",
+						"3S":{
+							"text":"Have Heart stop, Ask: Spade stop",
+							"3NT":{
+								"text":"To play (Have Spade stop)"
+							},
+							"4C":{
+								"text":"4+ Clubs, Escape (No Spade stop)",
+								"5C":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"4D":{
+								"text":"3+ Diamonds, Escape (No Spade stop)",
+								"5D":{
+									"text":"14+ HCP, To play"
+								}
+							},
+							"5C":{
+								"text":"14+ HCP, 4+ Clubs, Escape (No Spade stop), To play"
+							},
+							"5D":{
+								"text":"14+ HCP, 3+ Diamonds, Escape (No Spade stop), To play"
+							}
+						},
+						"3NT":{
+							"text":"Have Heart and Spade stop, To play"
+						}
+					},
+					"3S":{
+						"text":"4+ Clubs, Ask: Spade stop (Have Heart stop)",
+						"3NT":{
+							"text":"To play (Have Spade stop)"
+						},
+						"4C":{
+							"text":"Escape (No Spade stop)",
+							"5C":{
+								"text":"14+ HCP, To play"
+							}
+						},
+						"5C":{
+							"text":"14+ HCP, Escape (No Spade stop), To play"
+						}
+					},
+					"3NT":{
+						"text":"2- Diamonds and 3- Clubs OR Have Heart and Spade stop, To play"
+					}
+				}
+			},
+			"3D":{
+				"text":"5+ Diamonds",
+				"3H":{
+					"text":"Ask: Heart stop",
+					"3S":{
+						"text":"Ask: Spade stop (Have Heart stop)",
+						"3NT":{
+							"text":"Have Spade stop, To play"
+						},
+						"4D":{
+							"text":"Escape",
+							"5D":{
+								"text":"14+ HCP, To play"
+							}
+						}
+					},
+					"3NT":{
+						"text":"Have Heart and Spade stop, To play"
+					},
+					"4D":{
+						"text":"Escape (No Heart stop)",
+						"5D":{
+							"text":"14+ HCP, To play"
+						}
+					},
+					"5D":{
+						"text":"14+ HCP, Escape (No Heart stop), To play"
+					}
+				},
+				"3S":{
+					"text":"Ask: Spade stop (Have Heart stop)",
+					"3NT":{
+						"text":"To play (Have Spade stop)"
+					},
+					"4D":{
+						"text":"Escape (No Spade stop)",
+						"5D":{
+							"text":"14+ HCP, To play"
+						}
+					},
+					"5D":{
+						"text":"14+ HCP, Escape (No Spade stop), To play"
+					}
+				},
+				"3NT":{
+					"text":"Have Heart and Spade stop, To play"
+				}
+			},
+			"3H":{
+				"text":"7+ Hearts",
+				"3NT":{
+					"text":"0 Hearts, To play"
+				},
+				"4H":{
+					"text":"1+ Heart, To play"
+				}
+			},
+			"3NT":{
+				"text":"13+ Flat, lazy to check, To play"
+			},
+			"4H":{
+				"text":"8+ Hearts, To play"
+			}
+		},
+		"2H":{
+			"text":"6-9 HCP, 3+ Hearts",
+			"3H":{
+				"text":"15+ HCP",
+				"4H":{
+					"text":"8-9 HCP"
+				}
+			},
+			"4H":{
+				"text":"18+ HCP"
+			}
+		},
+		"2NT":{
+			"text":"10-11 HCP, Balanced, < 3 Hearts",
+			"3H":{
+				"text":"14+ HCP, 6+ Hearts, Game-Force",
+				"3NT":{
+					"text":"< 2 Hearts"
+				},
+				"4H":{
+					"text":"2 Hearts"
+				}
+			},
+			"3NT":{
+				"text":"15+ HCP"
+			}
+		},
+		"3H":{
+			"text":"10-11 HCP, 3+ Hearts",
+			"4H":{
+				"text":"14+ HCP"
+			}
+		},
+		"4H":{
+			"text":"12+ HCP, 3+ Hearts, To play"
+		}
+	},
+	"1S":{
+		"text":"12+ HCP, 5+ Spades",
+		"2C":{
+			"text":"12+ HCP, 3+ Clubs",
+			"2D":{
+				"text":"4+ Diamonds",
+				"2H":{
+					"text":"5-4 Clubs-Heart",
+					"2S":{
+						"text":"6+ Spades",
+						"2NT":{
+							"text":"No further info",
+							"3C":{
+								"text":"Club stop (eg A, Kx, Qxx [avoid Qxx])",
+								"3D":{
+									"text":"Diamond stop",
+									"3H":{
+										"text":"Ask: Heart stop",
+										"3S":{
+											"text":"Has Heart stop, Ask: Spade stop",
+											"3NT":{
+												"text":"To play"
+											}
 										},
-										"3NT": {"text": "Has Heart stop, to play"}
+										"3NT":{
+											"text":"Has Heart stop, to play"
+										}
 									},
-								"3S": {"text": "Ask: Spade stop",
-									"3NT": {"text": "To play"}
+									"3S":{
+										"text":"Ask: Spade stop (probably has hearts)",
+										"3NT":{
+											"text":"To play (Has spade stop)"
+										}
 									},
-								"3NT": {"text": "To play"}
+									"3NT":{
+										"text":"To play (Has heart and spade stop)"
+									}
+								},
+								"3H":{
+									"text":"Ask: Heart stop",
+									"3S":{
+										"text":"Has Heart stop, Ask: Spade stop",
+										"3NT":{
+											"text":"To play"
+										}
+									},
+									"3NT":{
+										"text":"Has Heart stop, to play"
+									}
+								},
+								"3S":{
+									"text":"Ask: Spade stop",
+									"3NT":{
+										"text":"To play"
+									}
+								},
+								"3NT":{
+									"text":"To play"
 								}
 							}
 						}
 					}
 				}
-			},
-		"2D": {"text": "12+ HCP 3+ Diamonds"
-			},
-		"2H": {"text": "12+ HCP 5+ Hearts"
-			},
-		"2S": { "text": "6+ HCP, 3+ Spades",
-			"3S": {"text": "15-16 HCP, no extra info on Spades",
-				"4S": {"text": "8-9 HCP, no extra info on Spades"}
-				},
-			"4S": {"text": "18+ HCP, no extra info on Spades"}
-			},
-		"3S": { "text": "10-11 HCP, 3+ Spades",
-			"4S": { "text": "14+ HCP, 5+ Spades"}
-			},
-		"4S": { "text": "12+ HCP, 3+ Spades"}
+			}
 		},
-	"1NT": { "text": "15-17 HCP, Balanced (No singleton/voids, No 6+ suits)",
-		"2C": {"text": "8+ HCP, Stayman (Have 4+ Heart/Spade)",
-			"2D": {"text": "No 4 card major",
-				"2NT": {"text": "8-9 HCP",
-					"3NT": {"text": "16(see mood) - 17 HCP"}
+		"2D":{
+			"text":"12+ HCP 3+ Diamonds"
+		},
+		"2H":{
+			"text":"12+ HCP 5+ Hearts"
+		},
+		"2S":{
+			"text":"6+ HCP, 3+ Spades",
+			"3S":{
+				"text":"15-16 HCP, no extra info on Spades",
+				"4S":{
+					"text":"8-9 HCP, no extra info on Spades"
+				}
+			},
+			"4S":{
+				"text":"18+ HCP, no extra info on Spades"
+			}
+		},
+		"3S":{
+			"text":"10-11 HCP, 3+ Spades",
+			"4S":{
+				"text":"14+ HCP, 5+ Spades"
+			}
+		},
+		"4S":{
+			"text":"12+ HCP, 3+ Spades"
+		}
+	},
+	"1NT":{
+		"text":"15-17 HCP, Balanced (No singleton/voids, No 6+ suits)",
+		"2C":{
+			"text":"8+ HCP, Stayman (Have 4+ Heart/Spade)",
+			"2D":{
+				"text":"No 4 card major",
+				"2NT":{
+					"text":"8-9 HCP",
+					"3NT":{
+						"text":"16(see mood) - 17 HCP"
+					}
+				},
+				"3NT":{
+					"text":"10-15 HCP"
+				}
+			},
+			"2H":{
+				"text":"4 Hearts",
+				"2NT":{
+					"text":"8-9 HCP, 3- Hearts, 4 Spades",
+					"3NT":{
+						"text":"16(see mood) - 17 HCP"
+					},
+					"4S":{
+						"text":"16+ HCP, 4 Spades"
+					}
+				},
+				"3NT":{
+					"text":"10+ HCP, 3- Hearts, 4 Spades",
+					"4S":{
+						"text":"4 Spades"
+					}
+				}
+			},
+			"2S":{
+				"text":"4 Spades",
+				"2NT":{
+					"text":"8-9 HCP, 3- Spades, 4 Hearts",
+					"3NT":{
+						"text":"16(see mood) - 17 HCP"
+					}
+				},
+				"3NT":{
+					"text":"10+ HCP, 3- Spades, 4 Hearts"
+				}
+			}
+		},
+		"2D":{
+			"text":"0+HCP, Jacoby Transfer to Hearts (5+ Hearts)",
+			"2H":{
+				"text":"You better bid this",
+				"2NT":{
+					"text":"8-9 HCP",
+					"3H":{
+						"text":"15 HCP, 3+ hearts",
+						"4H":{
+							"text":" 9 HCP, 5+ hearts"
 						}
+					},
+					"3NT":{
+						"text":"16-17 HCP, no 3 card heart"
+					},
+					"4H":{
+						"text":"16-17 HCP,  3+ hearts"
+					}
+				},
+				"3NT":{
+					"text":"10-15HCP",
+					"4H":{
+						"text":" 3+ hearts"
 					}
 				}
 			}
+		},
+		"2H":{
+			"text":"0+HCP, Jacoby Transfer to Spades (5+ Spades)",
+			"2S":{
+				"text":"You better bid this",
+				"2NT":{
+					"text":"8-9 HCP",
+					"3S":{
+						"text":"15 HCP, 3+ spades",
+						"4S":{
+							"text":"9 HCP, 5+ spades"
+						}
+					},
+					"3NT":{
+						"text":"16-17 HCP, no 3 card spade"
+					},
+					"4S":{
+						"text":"16-17 HCP,  3+ spades"
+					}
+				},
+				"3NT":{
+					"text":"10-15HCP",
+					"4S":{
+						"text":" 3+ spades"
+					}
+				}
+			}
+		},
+		"2NT":{
+			"text":"8-9 HCP, no 4 card major",
+			"3NT":{
+				"text":"16(see mood) - 17 HCP"
+			}
+		},
+		"3NT":{
+			"text":"10-15 HCP, no 4 card major"
+		}
 	}
+}
