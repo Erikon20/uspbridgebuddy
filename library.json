@@ -1,0 +1,33 @@
+{
+	"1S": { "text": "12+ HCP, 5+ Spades",
+		"2C": { "text": "12+ HCP, 3+ Clubs",
+			"2D": {"text": "4+ Diamonds",
+				"2H": {"text": "5-4 Clubs-Heart",
+					"2S": {"text": "6+ Spades",
+						"2NT": {"text": "No further info",
+							"3C": {"text": "Club stop (eg A, Kx, Qxx [avoid Qxx])",
+								"3D": {"text": "Diamond stop",
+									"3H": {"text": "Ask: Heart stop",
+										"3S": {"text": "Ask: Spade stop",
+											"3NT": {"text": "To play"}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+		"2S": { "text": "6+ HCP, 3+ Spades",
+			"3S": {"text": "15-16 HCP, no extra info on Spades",
+				"4S": {"text": "8-9 HCP, no extra info on Spades"}
+				},
+			"4S": {"text": "18+ HCP, no extra info on Spades"}
+			},
+		"3S": { "text": "10-11 HCP, 3+ Spades",
+			"4S": { "text": "14+ HCP, 5+ Spades"}
+			},
+		"4S": { "text": "12+ HCP, 3+ Spades"}
+		}
+	}
