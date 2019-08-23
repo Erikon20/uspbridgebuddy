@@ -8,16 +8,35 @@
 							"3C": {"text": "Club stop (eg A, Kx, Qxx [avoid Qxx])",
 								"3D": {"text": "Diamond stop",
 									"3H": {"text": "Ask: Heart stop",
-										"3S": {"text": "Ask: Spade stop",
+										"3S": {"text": "Has Heart stop, Ask: Spade stop",
 											"3NT": {"text": "To play"}
-											}
-										}
-									}
+											},
+										"3NT": {"text": "Has Heart stop, to play"}
+										},
+									"3S": {"text": "Ask: Spade stop (probably has hearts)",
+										"3NT": {"text": "To play (Has spade stop)"}
+										},
+									"3NT": {"text": "To play (Has heart and spade stop)"}
+									},
+								"3H": {"text": "Ask: Heart stop",
+									"3S": {"text": "Has Heart stop, Ask: Spade stop",
+											"3NT": {"text": "To play"}
+										},
+										"3NT": {"text": "Has Heart stop, to play"}
+									},
+								"3S": {"text": "Ask: Spade stop",
+									"3NT": {"text": "To play"}
+									},
+								"3NT": {"text": "To play"}
 								}
 							}
 						}
 					}
 				}
+			},
+		"2D": {"text": "12+ HCP 3+ Diamonds"
+			},
+		"2H": {"text": "12+ HCP 5+ Hearts"
 			},
 		"2S": { "text": "6+ HCP, 3+ Spades",
 			"3S": {"text": "15-16 HCP, no extra info on Spades",
@@ -29,5 +48,14 @@
 			"4S": { "text": "14+ HCP, 5+ Spades"}
 			},
 		"4S": { "text": "12+ HCP, 3+ Spades"}
-		}
+		},
+	"1NT": { "text": "15-17 HCP, Balanced (No singleton/voids, No 6+ suits)",
+		"2C": {"text": "8+ HCP, Stayman (Have 4+ Heart/Spade)",
+			"2D": {"text": "No 4 card major",
+				"2NT": {"text": "8-9 HCP",
+					"3NT": {"text": "16(see mood) - 17 HCP"}
+						}
+					}
+				}
+			}
 	}
